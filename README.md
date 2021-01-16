@@ -1,6 +1,6 @@
 # DISCORD-FACILMUSIC
 
-> **Ce module vous permet de transformez vos textes en caractères spéciaux parfois amusant !**
+> **Ce module vous permet de cree votre propre bot discord musique facilement !**
 
 ## Installer le module
 ```
