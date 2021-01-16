@@ -1,0 +1,49 @@
+{
+  "name": "discord-facilmusic",
+  "version": "1.0.0",
+  "description": "Ce module vous permet de cree votre propre bot discord musique facilement !",
+  "main": "./src/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnHamzaYT/discord-facilbot"
+  },
+  "keywords": [
+    "music",
+    "discord",
+    "discord-music",
+    "discord-backup",
+    "discord-multifonction",
+    "fr",
+    "bot",
+    "music-bot",
+    "discord-bot-tools",
+    "discord-facilbot",
+    "facile",
+    "onHamzayt",
+    "economy",
+    "money"
+  ],
+  "author": "OnHamzaYT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OnHamzaYT/discord-facilbot/issues"
+  },
+  "homepage": "https://github.com/OnHamzaYT/discord-facilbot#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "discord.js": "^12.3.1",
+    "fs": "0.0.1-security",
+    "hexacolors": "^1.1.1",
+    "node-fetch": "^2.6.1",
+    "opusscript": "0.0.7",
+    "quick.db": "^7.1.2",
+    "simple-youtube-api": "^5.2.1",
+    "ytdl-core": "^3.3.0"
+  }
+}
