@@ -1,20 +1,28 @@
-[![NPM](https://nodei.co/npm/discord-facilmusic.png)](https://nodei.co/npm/discord-facilmusic/)
+# DISCORD-FACILMUSIC
 
-# 🧰 discord-facilmusic
+> **Ce module vous permet de transformez vos textes en caractères spéciaux parfois amusant !**
 
-## 📥 Installation
+## Installer le module
 ```
 npm i discord-facilmusic
 ```
 
-## 💻 Exemple
+## Utilisation
+Ce module **très simple d'utilisation** vous permettra de faire un bot discord musique Tout cela en une seule ligne !
 ```js
-const Discord = require('discord.js'); // Require discord.js
-const client = new Discord.Client(); // Create the bot client.
+const Discord = require('discord.js');
+const client = new Discord.Client();
 const FacilMusic = require('discord-facilmusic');
 
+const client = new Discord.Client();
+
+const settings = {
+  token: "TOKEN DE VOTRE BOT",
+  prefix: "PREFIX DE VOTRE BOT"
+};
+
 const musicBot = new FacilMusic({
-    clientPrefix: ".", // Préfix du bot musique
+    clientPrefix: settings.prefix, // Préfix du bot musique
     youtubeApiKey: "YOUTUBE_API_KEY", // Clé d'API Youtube
     discordClient: client, // Ne pas toucher,
     config: {
@@ -26,54 +34,15 @@ client.on('message', message => { // Ne pas toucher
     musicBot.onMessage(message);
 });
 
-client.login('BOT_TOKEN'); // Mettez ici le token de votre bot (https://discord.com/developers/applications/)
+client.login(settings.token);
 ```
 
-### 🎶  Tout Les command
-* **PLAY**
-    * `play`,
-    * `add`,
-    * `p`,
-    * **+ `<recherche par chaine de caractère | URL de la vidéo>`**
+## Auteur
+> **On Hamza** | Discord: **On Hamza#9999** (ID: `686172394683236406`)
 
-* **STOP**
-    * `stop`,
-    * `kill`,
-    * `destroy`,
-* **PAUSE**
-    * `pause`,
-* **RESUME**
-    * `resume`,
-    * `res`,
-    * `play`,
-    * `p`
-* **SKIP**
-    * `skip`,
-    * `s`
-* **NOW-PLAY**
-    * `now-play`,
-    * `np`
-* **CLEAR**
-    * `clear`,
-    * `delete-queue`
-* **REPEAT**
-    * `repeat`,
-    * `loop`
-* **LEAVE**
-    * `leave`,
-    * `disconnect`
-* **JOIN**
-    * `join`,
-    * `connect`
-* **LYRICS**
-    * `lyrics`,
-    * `paroles`,
-    * `text`
-    * **+ `<recherche par chaine de caractère>`**
-* **VOLUME**
-    * `volume`,
-    * `vol`,
-    * `setVolume`
-* **QUEUE**
-    * `queue`,
-    * `q`
+* GitHub : [Cliquez ici](https://github.com/OnHamzaYT)
+
+## 📝 License
+© On Hamza - 2020-2021
+
+> Ce projet est sous license **MIT**.
